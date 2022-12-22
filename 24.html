@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            margin: 0;
+        }
+        .box{
+            width: 100%;
+            height: 120px;
+            background: rgb(255, 23, 140);
+        }
+        .box::after{
+            content: "xin chào các bạn " attr(data-title);
+        }
+        a::after {
+            content: "(" attr(href)")";
+        }
+    </style>
+</head>
+<body>
+    <div class="box" data-title="đây là box màu hồng "></div>
+    <a href="https://www.facebook.com/home.php">Facebook </a>
+    <h1> CSS functions</h1>
+    <ul>
+        <li>var()</li>
+        <li>linear-gradient()</li>
+        <li>rgba(_)</li>
+        <li>rgb</li>
+        <li>calc</li>
+        <li>attr</li>
+    </ul>
+</body>
+</html>
